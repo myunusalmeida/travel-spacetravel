@@ -377,26 +377,26 @@ header {
         padding: 0;
 
         &.right {
-            margin-top: 30px;
 
-            .blog-img-card {
-                .blog-img {
-                    width: 100%;
-                    height: 200px;
-                    object-fit: cover;
-                    object-position: center;
-                    border-radius: 20px;
-                }
+            // @media(max-width: 767px) {
+                margin-top: 30px;
+            // }
+
+            .blog-img {
+                width: 100%;
+                height: 200px;
+                object-fit: cover;
+                object-position: center;
+                border-radius: 20px;
             }
 
-            .content {
-                .title-blog {
-                    margin-bottom: 10px;
-                }
+            .title-blog {
+                margin-bottom: 10px;
             }
         }
 
         .blog-big-img {
+            margin-top: 36px;
             width: 100%;
             height: 400px;
             object-fit: cover;
