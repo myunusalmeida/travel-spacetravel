@@ -6,17 +6,17 @@
 $body-font: 'poppins',
 sans-serif;
 
-$primary-color      : #FF7533;
-$primary-color-alt  : #FFEBE1;
-$secondary-color    : #00A396;
+$primary-color : #FF7533;
+$primary-color-alt : #FFEBE1;
+$secondary-color : #00A396;
 $secondary-color-alt: #E9EEF8;
-$grey-color         : rgb(80, 80, 80);
-$page-color         : #F6F8FC;
+$grey-color : rgb(80, 80, 80);
+$page-color : #F6F8FC;
 
 // ROOT
 * {
-    margin    : 0;
-    padding   : 0;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
@@ -37,27 +37,27 @@ section {
     }
 
     .subtitle-section {
-        font-size     : 16px;
-        font-weight   : 600;
+        font-size: 16px;
+        font-weight: 600;
         text-transform: uppercase;
-        color         : $primary-color;
+        color: $primary-color;
     }
 
     .title-section {
-        font-size     : 36px;
-        font-weight   : 600;
+        font-size: 36px;
+        font-weight: 600;
         text-transform: capitalize;
-        margin-bottom : 20px;
+        margin-bottom: 20px;
 
         @media (max-width: 767px) {
-            font-size    : 28px;
+            font-size: 28px;
             margin-bottom: 10px;
         }
     }
 
     .description-section {
         font-size: 16px;
-        margin   : 0;
+        margin: 0;
     }
 }
 
@@ -67,10 +67,10 @@ img {
 
 .navbar-brand,
 .footer-logo {
-    margin         : 0;
-    font-weight    : 900;
-    font-size      : 22px;
-    color          : #000000;
+    margin: 0;
+    font-weight: 900;
+    font-size: 22px;
+    color: #000000;
     text-decoration: none;
 
     span {
@@ -79,7 +79,7 @@ img {
 
     &:hover {
         text-decoration: none;
-        color          : #000000;
+        color: #000000;
 
         span {
             color: $primary-color;
@@ -89,7 +89,7 @@ img {
 
 // HEADER NAVBAR
 header {
-    padding         : 20px 0;
+    padding: 20px 0;
     background-color: #fff;
 
     .navbar {
@@ -98,7 +98,7 @@ header {
         .navbar-nav {
             .nav-item {
                 .nav-link {
-                    font-size  : 16px;
+                    font-size: 16px;
                     font-weight: 500;
                 }
             }
@@ -107,18 +107,18 @@ header {
 }
 
 .banner-section {
-    padding   : 50px 0;
+    padding: 50px 0;
     min-height: 100vh;
-    width     : 100%;
+    width: 100%;
 
     &::before {
-        width           : 70%;
-        height          : 100%;
-        top             : 100px;
-        position        : absolute;
-        content         : "";
+        width: 70%;
+        height: 100%;
+        top: 100px;
+        position: absolute;
+        content: "";
         background-color: $page-color;
-        border-radius   : 0 0 30px 0;
+        border-radius: 0 0 30px 0;
 
         @media(max-width: 767px) {
             display: none;
@@ -126,48 +126,48 @@ header {
     }
 
     .content {
-        padding-left : 120px;
+        padding-left: 120px;
         padding-right: 0;
-        width        : 100%;
-        position     : relative;
+        width: 100%;
+        position: relative;
 
-        display    : flex;
+        display: flex;
         align-items: center;
 
         .title-banner {
-            font-size  : 72px;
+            font-size: 72px;
             font-weight: 700;
         }
 
         .description-banner {
-            font-size  : 18px;
+            font-size: 18px;
             font-weight: 400;
-            margin     : 30px 0;
+            margin: 30px 0;
         }
 
         .btn-banner {
             background-color: $primary-color;
-            color           : #FFFFFF;
-            padding         : 14px 24px;
-            border-radius   : 7px;
-            font-weight     : 500;
-            text-transform  : uppercase;
-            letter-spacing  : 1.5px;
-            transition      : .3s;
+            color: #FFFFFF;
+            padding: 14px 24px;
+            border-radius: 7px;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            transition: .3s;
 
             &:hover {
                 background-color: $primary-color-alt;
-                color           : $primary-color;
+                color: $primary-color;
             }
         }
 
         .img-banner {
             img {
-                margin-top   : 20px;
-                margin-left  : 10%;
-                width        : 90%;
-                height       : 500px;
-                object-fit   : cover;
+                margin-top: 20px;
+                margin-left: 10%;
+                width: 90%;
+                height: 500px;
+                object-fit: cover;
                 border-radius: 0 0 0 30px;
             }
         }
@@ -175,7 +175,7 @@ header {
 
         @media(max-width: 767px) {
             flex-direction: column;
-            padding       : 0 20px;
+            padding: 0 20px;
 
             .title-banner {
                 font-size: 42px;
@@ -191,10 +191,10 @@ header {
 
             .img-banner {
                 img {
-                    margin-top   : 50px;
-                    height       : 300px;
-                    width        : 100%;
-                    margin-left  : 0;
+                    margin-top: 50px;
+                    height: 300px;
+                    width: 100%;
+                    margin-left: 0;
                     border-radius: 0 30px;
                 }
             }
@@ -214,7 +214,7 @@ header {
         padding: 0;
 
         img {
-            width     : 80px;
+            width: 80px;
             margin-top: 30px;
         }
     }
@@ -222,20 +222,20 @@ header {
 
 .about-section {
     .img-about {
-        display        : flex;
+        display: flex;
         justify-content: space-between;
 
         .img {
-            width          : 40%;
-            height         : 460px;
-            object-fit     : cover;
+            width: 50%;
+            height: 460px;
+            object-fit: cover;
             object-position: center;
-            border-radius  : 0 30px 0 30px;
-            transition     : .3s;
+            border-radius: 0 30px 0 30px;
+            transition: .3s;
 
             &:first-child {
                 margin-right: 20px;
-                margin-top  : 50px;
+                margin-top: 50px;
             }
 
         }
@@ -245,8 +245,8 @@ header {
 
             .img {
                 margin-top: 30px;
-                width     : 100%;
-                height    : 200px;
+                width: 100%;
+                height: 200px;
 
                 &:first-child {
                     display: none;
@@ -257,17 +257,17 @@ header {
 }
 
 .destination-section {
-    padding : 50px 0;
+    padding: 50px 0;
     position: relative;
 
     &::before {
-        width           : 70%;
-        height          : 100%;
-        top             : 0;
-        position        : absolute;
-        content         : "";
+        width: 70%;
+        height: 100%;
+        top: 0;
+        position: absolute;
+        content: "";
         background-color: $page-color;
-        border-radius   : 0 0 30px 0;
+        border-radius: 0 0 30px 0;
 
         @media(max-width: 767px) {
             display: none;
@@ -279,63 +279,63 @@ header {
 
         @media (max-width: 767px) {
             margin-top: 40px;
-            float     : left;
+            float: left;
         }
 
         .btn-destination-next,
         .btn-destination-prev {
             border-radius: 7px;
-            padding      : 10px 50px;
-            transition   : .3s;
-            cursor       : pointer;
+            padding: 10px 50px;
+            transition: .3s;
+            cursor: pointer;
         }
 
         .btn-destination-next {
             background-color: $primary-color-alt;
-            color           : $primary-color;
+            color: $primary-color;
 
             &:hover {
                 background-color: $primary-color;
-                color           : $primary-color-alt;
+                color: $primary-color-alt;
             }
         }
 
         .btn-destination-prev {
             background-color: $secondary-color-alt;
-            color           : $secondary-color;
+            color: $secondary-color;
 
             &:hover {
                 background-color: $secondary-color;
-                color           : $secondary-color-alt;
+                color: $secondary-color-alt;
             }
         }
     }
 
     .content {
-        width        : 100%;
-        padding-top  : 60px;
+        width: 100%;
+        padding-top: 60px;
         padding-right: 0;
-        padding-left : 120px;
-        display      : flex;
+        padding-left: 120px;
+        display: flex;
 
         @media(max-width: 767px) {
             padding-left: 20px;
-            padding-top : 30px;
+            padding-top: 30px;
         }
 
         .destination-slide {
             padding: 0;
-            width  : 20% !important;
+            width: 20% !important;
 
             @media(max-width: 767px) {
                 width: 70% !important;
             }
 
             img {
-                width          : 100%;
-                height         : 360px;
-                border-radius  : 20px;
-                object-fit     : cover;
+                width: 100%;
+                height: 360px;
+                border-radius: 20px;
+                object-fit: cover;
                 object-position: center;
 
                 @media(max-width: 767px) {
@@ -344,9 +344,9 @@ header {
             }
 
             .title-destination {
-                font-size  : 20px;
+                font-size: 20px;
                 font-weight: 600;
-                margin-top : 20px;
+                margin-top: 20px;
             }
         }
     }
@@ -354,18 +354,18 @@ header {
 
 .blog-section {
     .btn-blog-more {
-        padding         : 10px 50px;
+        padding: 10px 50px;
         background-color: $primary-color-alt;
-        color           : $primary-color;
-        text-transform  : uppercase;
-        letter-spacing  : 1.5px;
-        float           : right;
-        border-radius   : 7px;
-        transition      : .3s;
+        color: $primary-color;
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+        float: right;
+        border-radius: 7px;
+        transition: .3s;
 
         &:hover {
             background-color: $primary-color;
-            color           : $primary-color-alt;
+            color: $primary-color-alt;
         }
 
         @media(max-width: 767px) {
@@ -381,11 +381,11 @@ header {
 
             .blog-img-card {
                 .blog-img {
-                    width          : 100%;
-                    height         : 200px;
-                    object-fit     : cover;
+                    width: 100%;
+                    height: 200px;
+                    object-fit: cover;
                     object-position: center;
-                    border-radius  : 20px;
+                    border-radius: 20px;
                 }
             }
 
@@ -397,17 +397,17 @@ header {
         }
 
         .blog-big-img {
-            width          : 100%;
-            height         : 400px;
-            object-fit     : cover;
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
             object-position: center;
-            border-radius  : 20px;
+            border-radius: 20px;
         }
 
         .title-blog {
-            font-size  : 22px;
+            font-size: 22px;
             font-weight: 500;
-            margin     : 30px 0 20px;
+            margin: 30px 0 20px;
         }
 
         .description-blog {
@@ -416,21 +416,21 @@ header {
 
         .btn-read-more {
             margin-top: 10px;
-            padding   : 8px 20px;
+            padding: 8px 20px;
 
-            font-size     : 14px;
-            font-weight   : 500;
+            font-size: 14px;
+            font-weight: 500;
             text-transform: uppercase;
             letter-spacing: 1.5px;
 
             background-color: $primary-color-alt;
-            color           : $primary-color;
+            color: $primary-color;
 
             transition: .3s;
 
             &:hover {
                 background-color: $primary-color;
-                color           : $primary-color-alt;
+                color: $primary-color-alt;
             }
         }
 
@@ -449,59 +449,59 @@ header {
 .book-section {
 
     .content {
-        width           : 100%;
-        display         : flex;
-        flex-direction  : column;
-        justify-content : center;
-        align-items     : center;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         background-color: $secondary-color-alt;
-        padding         : 100px;
-        border-radius   : 20px;
+        padding: 100px;
+        border-radius: 20px;
 
         .title-book {
-            font-size  : 42px;
+            font-size: 42px;
             font-weight: 700;
         }
 
         .form {
-            margin-top      : 50px;
-            width           : 70%;
+            margin-top: 50px;
+            width: 70%;
             background-color: #FFFFFF;
-            padding         : 20px;
-            border-radius   : 20px;
+            padding: 20px;
+            border-radius: 20px;
 
             select,
             input {
                 background-color: #f5f5f5;
-                border          : none;
-                border-radius   : 10px;
-                font-size       : 14px;
-                padding         : 10px;
-                height          : 50px;
+                border: none;
+                border-radius: 10px;
+                font-size: 14px;
+                padding: 10px;
+                height: 50px;
             }
 
             .btn-book {
-                border-radius   : 10px;
+                border-radius: 10px;
                 background-color: $primary-color;
-                color           : $primary-color-alt;
-                padding         : 10px 20px;
-                height          : 50px;
-                transition      : .3s;
+                color: $primary-color-alt;
+                padding: 10px 20px;
+                height: 50px;
+                transition: .3s;
 
                 &:hover {
                     background-color: $primary-color-alt;
-                    color           : $primary-color;
+                    color: $primary-color;
                 }
 
                 i {
                     font-size: 20px;
-                    display  : block;
+                    display: block;
                 }
             }
         }
 
         @media(max-width: 767px) {
-            padding   : 20px;
+            padding: 20px;
             margin-top: 0;
 
             .title-book {
@@ -526,26 +526,26 @@ header {
 
     .footer-description {
         font-weight: 500;
-        color      : $grey-color;
-        margin     : 20px 0;
+        color: $grey-color;
+        margin: 20px 0;
     }
 
     .social-icons {
-        margin-top : 30px;
-        list-style : none;
-        display    : flex;
+        margin-top: 30px;
+        list-style: none;
+        display: flex;
         align-items: center;
 
         a {
             font-size: 24px;
-            color    : #000000;
+            color: #000000;
         }
     }
 
     .title-footer {
-        font-size  : 18px;
+        font-size: 18px;
         font-weight: 600;
-        margin     : 0;
+        margin: 0;
     }
 
     .footer-ul {
@@ -556,9 +556,9 @@ header {
             margin-bottom: 10px;
 
             a {
-                font-weight   : normal;
+                font-weight: normal;
                 text-transform: capitalize;
-                color         : $grey-color;
+                color: $grey-color;
             }
         }
     }
@@ -581,7 +581,7 @@ header {
             text-align: center;
 
             @media(max-width: 767px) {
-font-size: 12px;
+                font-size: 12px;
             }
         }
     }

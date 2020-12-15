@@ -217,7 +217,7 @@ header .navbar .navbar-nav .nav-item .nav-link {
 }
 
 .about-section .img-about .img {
-  width: 40%;
+  width: 50%;
   height: 460px;
   -o-object-fit: cover;
      object-fit: cover;
